@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Emit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Add your CSS styling here */
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .video-container {
+      position: relative;
+      border-radius: 3%;
+      border: 0.5px solid #f3d7ff;
+      background-color: #fff;
+      transition: all .4s;
+      padding: 2px;
+      width: 100%;
+      height: 100vh;
+      /* Set the height to occupy the full viewport height */
+      display: flex;
+      /* Add flexbox to center content */
+      justify-content: center;
+      /* Center content horizontally */
+      align-items: center;
+      /* Center content vertically */
+    }
+
+    .video-container video {
+      max-width: 100%;
+      /* Set max-width for responsiveness */
+      max-height: 100%;
+      /* Set max-height to maintain aspect ratio */
+      object-fit: contain;
+      /* This will make the video fit inside the container */
+      border-radius: 5%;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .intro--banner img {
+      position: absolute;
+      top: 25%;
+      left: 80%;
+
+      transform: translate(-50%, -50%);
+      min-width: 1000px;
+      min-height: 760px;
+    }
+
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100%;
+      text-align: center;
+    }
+
+    .center-container .container-nev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .center-container .container-nev .info {
+      flex: 1;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .center-container .container-nev .image {
+      flex: 1;
+      text-align: center;
+
+    }
+
+    .center-container .container-nev img {
+      border-radius: 5%;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <img src="assets/img/logo.png" alt="Global" height="10px" ; width="10px">
+      <p>E M I T</p>
+    </a>
+    <p class="device-notification--message"></p>
+  </div>
+
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <img src="assets/img/logo.png" alt="Global" height="100px" ; width="100px">
+              <p>E M I T</p>
+            </a>
+            <button class="header--cta cta">E M I T</button>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+
+              <li class="is-active"><span>Info</span></li>
+
+
+            </ul>
+          </nav>
+
+          <ul class="l-main-content main-content">
+            <li class="l-section section section--is-active">
+              <div class="intro">
+                <div class="intro--banner">
+                  <h1>
+                    Nasa Information
+                  </h1>
+                  <span class="btn-background"></span>
+                  </button>
+                  <img src="/assets/img/earth-moon-removebg.png" alt="Welcome">
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="contact">
+                <div class="contact--lockup">
+                  <div class="video-container">
+                    <video id="myVideo" controls autoplay loop muted>
+                      <source src="/assets/img/WhatsApp Video 2023-10-02 at 22.44.51_7d88f1ef.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="content">
+    <!-- First Container (Information on left, Image on right) -->
+    <div class="center-container">
+      <div class="container-nev">
+        <div class="info">
+          <h2>A NASA Earth Venture Instrument & Installed on the International Space Station</h2>
+          <p>
+          <ol>
+            In NASA's Earth Venture Mission-2 competition, proposals for payloads on the exterior of the International
+            Space Station (ISS) for Earth observation are not accepted. Instead, the focus is on standalone spacecraft
+            missions managed by single principal investigators. The mission cost is capped at $166 million (2018
+            dollars), with a launch deadline of June 30, 2022</ol>
+
+          <ol>No Exterior ISS Payloads: The competition excludes proposals for exterior ISS payloads for Earth
+            observation.</ol>
+          <ol>Mission Parameters: Mission cost is limited to $166 million, and the launch deadline is set for June 30,
+            2022</ol>
+          <ol>Proposal Timeline: NASA required proposers to notify their intentions by October 2, with final proposals
+            due
+            by December 4. The award for one proposal is expected in August 2016</ol>
+          <ol>Cubesat Proposals: While exterior ISS payloads are not allowed, Cubesat proposals are permitted. Launching
+            them
+            from the ISS's Cubesat dispenser is not prohibited.</ol>
+          <ol>Earth Venture Missions: These missions aim to enhance our understanding of global changes from the
+            atmosphere
+            downward, with a broader scope than just observing Earth itself.</ol>
+          <ol>Previous Success: The first Earth Venture mission solicitation was in 2011 and resulted in the Cyclone
+            Global Navigation Satellite System (CYGNSS) winning in 2012.</ol>
+          <ol>ISS Earth Science Payloads: NASA had previously encouraged the use of instruments on the ISS for Earth
+            science observations.</ol>
+          <ol>Grounded Vehicles: SpaceX's Dragon and Orbital ATK's Cygnus, used for ISS payloads, faced temporary
+            grounding due
+            to launch failures but were scheduled to resume flights.</ol>
+          <ol>Langley's Lunar Observation Proposal: A proposal to observe the moon using a compact spectrometer on a
+            small
+            satellite was considered but not submitted in the latest Earth Science competition.</ol>
+          <ol>Earth System Science Pathfinder: Earth Venture missions are part of the Earth System Science Pathfinder
+            program,
+            which includes suborbital missions and instrument proposals.</ol>
+          <ol>Instrument Solicitations: Principal investigators can propose hosting their payloads on nondedicated
+            spacecraft.
+            An award for the Earth Venture Instrument payload is expected by March</ol>
+          <ol>Budget Constraints: Earth Venture missions have limited budgets and are among NASA's smallest principal
+            investigator-led missions under the Science Mission Directorate.</ol>
+
+
+
+          </p>
+        </div>
+        <div class="image">
+          <img src="https://spacenews.com/wp-content/uploads/2015/09/ISS_NASA4X3-879x485.jpg" alt="NASA Image 1">
+          <img
+            src="https://imgs.search.brave.com/t4LfqhUTHzswxuFCos5_Bsuhth7RIxW0U0yq6PUgPZ0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbmd0/ZWFtLmNvbS9pbWFn/ZXMvc2F0ZWxsaXRl/LXBuZy02OTF4NDUz/X2VmZDc5OTYwX3Ry/YW5zcGFyZW50XzIw/MjJlMC5wbmcucG5n"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br><br><br><br><br>
+<br><br><br><br><br><br>
+  <!-- Content Container -->
+  <div class="content">
+    <!-- First Container (Information on left, Image on right) -->
+    <div class="center-container">
+      <div class="container-nev">
+        <div class="info">
+          <h2>Methane ‘Super-Emitters' Mapped by NASA's New Earth Space Mission</h2>
+          <p>
+            <ol>
+              The NASA Earth Surface Mineral Dust Source Investigation (EMIT) mission, located on the International Space
+            Station (ISS), is primarily focused on mapping key minerals in Earth's dust-producing deserts to advance our
+            understanding of the impact of airborne dust on climate. However, EMIT has also demonstrated the ability to
+            detect methane, a potent greenhouse gas. The mission has identified over 50 "super-emitters" of methane in
+            regions including Central Asia, the Middle East, and the Southwestern United States. Super-emitters are
+            facilities or infrastructure that release methane at high rates, often associated with fossil fuels, waste,
+            or agriculture.
+
+             </ol>
+            <ol>Methane is a critical greenhouse gas, significantly more effective at trapping heat than carbon dioxide in
+              the short term. Identifying methane point sources, such as those detected by EMIT, is crucial for addressing
+              emissions and mitigating their impact on climate change.</ol>
+            <ol>Methane is a critical greenhouse gas, significantly more effective at trapping heat than carbon dioxide in
+              the short term. Identifying methane point sources, such as those detected by EMIT, is crucial for addressing
+              emissions and mitigating their impact on climate change.</ol>
+            <ol>EMIT's unique capabilities come from its imaging spectrometer, which can discern the spectral fingerprint of
+              methane and measure carbon dioxide accurately. The mission's broad coverage of Earth's surface and
+              high-resolution imaging enable it to identify methane sources down to the facility scale.</ol>
+            <ol>EMIT's methane observations have exceeded expectations, detecting large plumes from various sources,
+              including oil and gas infrastructure, waste-processing complexes, and landfills. These findings highlight
+              the potential for hundreds of super-emitters to be discovered as EMIT continues its survey of the planet.</ol>
+            <ol>Additionally, EMIT's mineral data will contribute to climate modeling by helping researchers understand the
+              role of airborne dust particles in Earth's climate processes. This dual capability of EMIT enhances our
+              ability to monitor and address greenhouse gas emissions and their impact on global warming.</ol>
+            
+            <ol>
+
+              The International Space Station hosts seven instruments for NASA Earth Science, including EMIT, which
+              provides valuable information for studying and understanding the changing planet. EMIT is the first of its
+              kind, and its data will be shared with researchers and the public through the NASA Land Processes
+              Distributed Active Archive Center (DAAC). This mission demonstrates how space-based technology can play a
+              crucial role in monitoring and mitigating climate change.
+            </ol>  
+
+          </p>
+        </div>
+        <div class="image">
+          <img src="https://earth.jpl.nasa.gov/emit/system/internal_resources/details/original/318_desert_methane.jpeg" alt="NASA Image 1">
+          <img
+            src="https://earth.jpl.nasa.gov/emit/system/news_items/main_images/23_1-PIA25592_EMIT_methane_permian.jpg"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Instruments</li>
+    <li>About Emit</li>
+    <li>Resources</li>
+    <li>Apps</li>
+    <li>Games</li>
+  </ul>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    // Get the video element
+    var video = document.getElementById("myVideo");
+
+    // Function to pause the video when scrolling
+    function pauseVideoOnScroll() {
+      if (!video.paused) {
+        video.pause();
+      }
+    }
+
+    // Attach the scroll event listener to the window
+    window.addEventListener("scroll", pauseVideoOnScroll);
+  </script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+</body>
+
+</html>
